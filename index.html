@@ -8,7 +8,62 @@
   </head>
   <body>
     <div id="app"></div>
-<!--  -->
+    
+    <!--  -->
+    <form>
+    <div class="row">
+      <label class="desc" for="full_name">Full Name</label>
+
+      <input
+        id="full_name"
+        name="full_name"
+        type="text"
+        class="field text fn"
+        value=""
+        size="50"
+        tabindex="1"
+        required
+      />
+    </div>
+    <!-- email -->
+    <div class="row">
+      <label class="desc" for="my_email"> Email </label>
+
+      <input
+        id="my_email"
+        name="my_email"
+        type="email"
+        spellcheck="false"
+        placeholder="enter email here"
+        maxlength="255"
+        tabindex="2"
+        required
+      />
+    </div>
+
+    <!-- message -->
+    <div class="row">
+      <label class="desc" id="title4" for="Field4"> Message </label>
+
+      <textarea
+        id="Field4"
+        name="Field4"
+        spellcheck="true"
+        rows="10"
+        cols="50"
+        tabindex="4"
+        required
+      ></textarea>
+    </div>
+
+    <!-- select box -->
+
+    <!-- check box -->
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="I agree" required />
+    <label for="vehicle1"> I agree to post my comment</label><br />
+
+    <button id="submit" type="submit">submit</button>
+  </form>
     <custom-comment
       name="Laciesha"
       email="lacieshapowell@gmail.com"
@@ -26,6 +81,7 @@
       email="sally.gmail.com"
       comment="what's up yall"
     ></custom-comment>
+  
 
     <!-- link custom comment to comment.jas which controls what custum comment tag does -->
     <script type="module" src="/comment.js"></script>
