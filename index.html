@@ -2,93 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Comment Component</title>
   </head>
   <body>
-    <div id="app"></div>
+    <header>
+      <h1>
+        <!-- <img class="icon" src="favicon.jpg" /> -->
+        <i class="far fa-comment"></i>
+        Comment Demo (Pub / Sub)
+      </h1>
+    </header>
+
+    <main>
+      
+        <section class="form-container">
+            <!-- 
+                the form component is going to inject 
+                the form right here
+            -->
+        </section>
+
+      <section class="comments"> </section>
     
-    <!--  -->
-    <form>
-    <div class="row">
-      <label class="desc" for="full_name">Full Name</label>
+    
+    
+    </main>
 
-      <input
-        id="full_name"
-        name="full_name"
-        type="text"
-        class="field text fn"
-        value=""
-        size="50"
-        tabindex="1"
-        required
-      />
-    </div>
-    <!-- email -->
-    <div class="row">
-      <label class="desc" for="my_email"> Email </label>
-
-      <input
-        id="my_email"
-        name="my_email"
-        type="email"
-        spellcheck="false"
-        placeholder="enter email here"
-        maxlength="255"
-        tabindex="2"
-        required
-      />
-    </div>
-
-    <!-- message -->
-    <div class="row">
-      <label class="desc" id="title4" for="Field4"> Message </label>
-
-      <textarea
-        id="comment"
-        name="comment"
-        spellcheck="true"
-        rows="10"
-        cols="50"
-        tabindex="4"
-        required
-      ></textarea>
-    </div>
-
-    <!-- select box -->
-
-    <!-- check box -->
-    <input type="checkbox" id="check" name="check" value="I agree" required />
-    <label for="vehicle1"> I agree to post my comment</label><br />
-
-    <button id="submit" type="submit">submit</button>
-  </form>
-  <section id="comments">
-    <custom-comment
-      name="Laciesha"
-      email="lacieshapowell@gmail.com"
-      comment="Hey how are you"
-      timestamp="7/3/2022"
-    ></custom-comment>
-
-    <custom-comment
-      name="Bobby"
-      email="bobby.gmail.com"
-      comment="Hi everyone"
-      timestamp=""
-    ></custom-comment>
-
-    <custom-comment
-      name="Sally"
-      email="sally.gmail.com"
-      comment="what's up yall"
-      timestamp=""
-    ></custom-comment>
-  </section>
-
-    <!-- link custom comment to comment.jas which controls what custum comment tag does -->
-    <script type="module" src="/comment.js"></script>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/js/comment.js"></script>
+    <script type="module" src="/js/main.js"></script>
   </body>
 </html>
