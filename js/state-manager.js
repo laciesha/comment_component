@@ -19,19 +19,19 @@ export default class StateManager {
         this.comments = [
             {
                 name: "Greg",
-                email: "julius@gmail.com",
+                email: "greg@gmail.com",
                 comment: "Here is my comment!",
                 timestamp: "7/29/2022 3:15:13PM"
             },
             {
                 name: "Bobby",
-                email: "adwaina@gmail.com",
+                email: "bobby@gmail.com",
                 comment: "text text text text text text text text text text ",
                 timestamp: "8/3/2022 3:15:13PM"
             },
             {
                 name: "Marsha",
-                email: "mo@gmail.com",
+                email: "marsha@gmail.com",
                 comment: "text text text text text text text text text text ",
                 timestamp: "8/4/2022 3:15:13PM"
             }
