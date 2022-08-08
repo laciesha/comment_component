@@ -36,13 +36,35 @@ export default class StateManager {
                 timestamp: "8/4/2022 3:15:13PM"
             }
         ]
+        //mailing list
+        this.subscribers = [];
     }
 
     // 2. we need a way to update the comments list
     addComment(newComment){
+        // this code is adding a new comment object to the comments array
         this.comments.push(newComment);
         console.log(this.comments);
+        
+        //now you need to notify all the subscribers that a comment has been added
+        //so that each subscriber can respond
+        //to do this we're going to loop through each subscriber and invoke a callback function
+        for(let i = 0; i < this.subscribers.length; i++){
+            const theEvent = this.subscribers[i][0];
+            const theFunction = this.subscribers[i][1];
+            if(theEvent=="add comment"){
+                theFunction(this.comments);
+            }
+        }
     }
 
     // 3. we need a way to tell the other components to redraw
+    subscribe(theEvent, theResponse) {
+        //this code adds a list of two elements to the subscribers array
+        //the first elements is a string that indicates which event the subsciber is interested in
+        //the second element is a function that will get invoked when the event happens
+        this.subscribers.push([
+            theEvent, theResponse
+        ])
+    }
 }
