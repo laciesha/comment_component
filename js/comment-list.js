@@ -9,7 +9,8 @@ export default class CommentList {
 
   constructor(stateManager) {
     stateManager.subscribe('add comment', this.redraw.bind(this));
-    this.redraw(stateManager.comments);
+    stateManager.subscribe('comments-loaded', this.redraw.bind(this));
+    //this.redraw(stateManager.comments);
 
     //then the comment list is going to subscrive to the
     //"comment update"event.
