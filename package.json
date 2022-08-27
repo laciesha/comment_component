@@ -9,5 +9,9 @@
   },
   "devDependencies": {
     "vite": "^2.9.9"
+  },
+  "dependencies": {
+    "vite-plugin-pwa": "^0.12.3",
+    "workbox-precaching": "^6.5.4"
   }
 }
