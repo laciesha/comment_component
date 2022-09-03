@@ -37,6 +37,7 @@ export default class StateManager {
         //     }
         // ]
         //mailing list
+        this.comments = [];
         this.subscribers = [];
         this.loadDatabase();
     }
