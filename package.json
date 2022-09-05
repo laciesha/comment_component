@@ -2,6 +2,7 @@
   "name": "comment-component",
   "private": true,
   "version": "0.0.0",
+  "homepage": "blah",
   "scripts": {
     "dev": "vite serve",
     "build": "vite build ",
