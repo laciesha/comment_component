@@ -5,19 +5,17 @@
   "scripts": {
     "dev": "vite serve",
     "build": "vite build",
-    "preview": "vite preview"
-  
-    
+    "preview": "vite preview",
+    "test": "prettier -c .",
+    "fix": "prettier --write ."
   },
   "devDependencies": {
     "vite": "^2.9.9",
-    "vite-plugin-pwa": "^0.12.3"
+    "vite-plugin-pwa": "^0.12.3",
+    "prettier": "^2.7.1"
   },
-"dependencies": {
-
-  "copyfiles": "^2.4.1",
-  "express": "^4.18.1"
-
-}
-    
+  "dependencies": {
+    "copyfiles": "^2.4.1",
+    "express": "^4.18.1"
   }
+}

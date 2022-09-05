@@ -1,7 +1,7 @@
-import '../style.css'
-import StateManager from './state-manager.js'
-import CommentList from './comment-list.js'
-import Form from './form-component';
+import "../style.css";
+import StateManager from "./state-manager.js";
+import CommentList from "./comment-list.js";
+import Form from "./form-component";
 
 /*
 Goal:

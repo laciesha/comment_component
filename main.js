@@ -30,10 +30,6 @@ const addComment = (ev) => {
   timestamp="${dateString}"
 ></custom-comment>`;
 
-
-
-
-
   console.log(template);
   document.querySelector("#comments").insertAdjacentHTML("beforeend", template);
   document.querySelector("#full_name").value = "";

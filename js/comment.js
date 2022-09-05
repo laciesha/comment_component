@@ -2,14 +2,14 @@
 //includes what attributes are needed and how they are presented
 //also include a style tag with style rules (optional)
 class Comment extends HTMLElement {
-    constructor() {
-      super();
-    }
+  constructor() {
+    super();
+  }
 
-    //overriding the connected callback method with my own html
-    connectedCallback(){
-      const shadow = this.attachShadow({mode: "open"}); 
-        shadow.innerHTML = `<section class = "comment">
+  //overriding the connected callback method with my own html
+  connectedCallback() {
+    const shadow = this.attachShadow({ mode: "open" });
+    shadow.innerHTML = `<section class = "comment">
     
         <h2>
           ${this.getAttribute("name")}
@@ -32,9 +32,8 @@ class Comment extends HTMLElement {
         margin-right: 20vw;
       }
       </style>`;
-      
-    }
   }
+}
 
-  //custome-elem
-  customElements.define('custom-comment', Comment);
+//custome-elem
+customElements.define("custom-comment", Comment);
